@@ -14,7 +14,7 @@ Quick Start
 
 Clone this repo
 
-git clone https://github.com/yourname/AutoResearcher.git
+git clone https://github.com/sdv1708/AutoResearcher.git
 cd AutoResearcher
 
 Set up a virtual environment and install dependencies
