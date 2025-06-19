@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "autoresearcher"
+version = "0.1.0"
+description = ""
+authors = ["Sanjay DV <55549923+sdv1708@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.13"
+uvicorn = "^0.34.3"
+pydantic = "^2.11.7"
+python-decouple = "^3.8"
+httpx = "^0.28.1"
+aiofiles = "^24.1.0"
+python-multipart = "^0.0.20"
+structlog = "^25.4.0"
+python-json-logger = "^3.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-asyncio = "^1.0.0"
+pytest-cov = "^6.2.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+flake8 = "^7.2.0"
+mypy = "^1.16.1"
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
