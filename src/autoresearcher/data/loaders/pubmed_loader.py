@@ -3,7 +3,7 @@
   File Name      : pubmed_loader.py
   Created On     : 2025-06-20
   Created By     : Pranav Rajesh Charakondala
-  Last Modified  : YYYY-MM-DD (update as needed)
+  Last Modified  : 2025-06-20 (update as needed)
   Description    : 
     This module defines the PubMedLoader class responsible for loading and 
     parsing biomedical abstracts from PubMed XML files (downloaded locally or 
