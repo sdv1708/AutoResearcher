@@ -1,0 +1,13 @@
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation>
+      <PMID>12345678</PMID>
+      <Article>
+        <ArticleTitle>Sample PubMed Article</ArticleTitle>
+        <Abstract>
+          <AbstractText>This is a test abstract for PubMed XML parsing.</AbstractText>
+        </Abstract>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+</PubmedArticleSet>
