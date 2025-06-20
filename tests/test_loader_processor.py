@@ -7,7 +7,7 @@ from autoresearcher.data.loaders.pubmed_loader import PubMedLoader
 from autoresearcher.data.processors.document_processor import DocumentProcessor
 
 # --- CONFIG ---
-xml_path = Path("src/autoresearcher/data/pubmed-example.xml")
+xml_path = Path("src/autoresearcher/data/pubmed25n0001.xml")
 
 # --- GCS MOCK (for local testing without actual bucket) ---
 class MockBlob:
@@ -16,14 +16,14 @@ class MockBlob:
         self.path = path
 
     def download_as_text(self) -> str:
-        return self.path.read_text()
+        return Path(self.path).read_text(encoding="utf-8")
 
 class MockBucket:
     def __init__(self, file_path: Path):
         self.file_path = file_path
 
     def list_blobs(self, prefix: str = None) -> Iterator[MockBlob]:
-        return [MockBlob("pubmed-example.xml", self.file_path)]
+        return [MockBlob("pubmed25n0001.xml", self.file_path)]
 
 class MockStorageClient:
     def bucket(self, bucket_name: str) -> MockBucket:

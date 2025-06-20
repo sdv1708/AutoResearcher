@@ -16,6 +16,7 @@
 
   Modification Log:
     - 2025-06-20: File created with cleaning and chunking logic
+    - 2025-06-20: Added default handling and passthrough for vernacular title, language, publication types, MeSH terms, chemicals, author names and DOIs.
 ================================================================================
 """
 # src/autoresearcher/data/processors/document_processor.py
@@ -32,6 +33,14 @@ class DocumentProcessor:
         doc["abstract_clean"] = self._clean_text(doc["abstract"])
         doc["full_text"] = f"{doc['title_clean']} {doc['abstract_clean']}"
         doc["chunks"] = self._chunk_text(doc["full_text"])
+
+        doc["language"] = doc.get("language", "eng")  # fallback to English
+        doc["vernacular_title"] = doc.get("vernacular_title", "")
+        doc["publication_types"] = doc.get("publication_types", [])
+        doc["mesh_terms"] = doc.get("mesh_terms", [])
+        doc["chemicals"] = doc.get("chemicals", [])
+        doc["authors"] = doc.get("authors", [])
+        doc["doi"] = doc.get("doi", "")
         return doc
 
     def _clean_text(self, text: str) -> str:
