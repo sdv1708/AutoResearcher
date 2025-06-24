@@ -17,11 +17,6 @@ Clone this repo
 git clone https://github.com/sdv1708/AutoResearcher.git
 cd AutoResearcher
 
-Set up a virtual environment and install dependencies
-
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
 Configure config.yaml with your GCP project, storage paths, and model settings
 
 More details on data ingestion, RAG setup, agent workflows, and fine‑tuning scripts are coming soon!
