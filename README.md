@@ -19,4 +19,8 @@ cd AutoResearcher
 
 Configure config.yaml with your GCP project, storage paths, and model settings
 
+Documents → Chunking → Embedding Text Prep → Vertex AI → FAISS Index
+                                                            ↓
+                                                     GCS Backup (TODO)
+
 More details on data ingestion, RAG setup, agent workflows, and fine‑tuning scripts are coming soon!
