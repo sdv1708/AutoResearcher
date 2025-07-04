@@ -1,6 +1,8 @@
 from functools import lru_cache
+from typing import Optional
 
-from pydantic import BaseSettings
+from pydantic import BaseModel
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -21,8 +23,13 @@ class Settings(BaseSettings):
     # External APIs (for mocks)
     use_mock_models: bool = True
 
-    class Config:
-        env_file = ".env"
+    # GCP Configuration (optional override)
+    gcp_project_id: Optional[str] = None
+    gcp_location: Optional[str] = None
+
+    model_config = SettingsConfigDict(
+        env_file=".env", env_file_encoding="utf-8", case_sensitive=False
+    )
 
 
 @lru_cache()

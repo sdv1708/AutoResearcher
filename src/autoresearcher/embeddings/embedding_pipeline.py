@@ -123,15 +123,11 @@ class EmbeddingPipeline:
         if section and section != "Unknown Section":
             parts.append(f"[Section: {section}]")
 
-        # Add chunk type if not a regulare paragraph
+        # Add chunk type if not a regular paragraph
         if chunk.chunk_type in ["title", "abstract"]:
-            parts.append(f"Type: {chunk.chunk_type}")
+            parts.append(f"[Type: {chunk.chunk_type}]")
 
         # Add text content
-        section = chunk.metadata.get("section", "")
-        if section and section != "Unknown Section":
-            parts.append(f"[Section: {section}]")
-
         parts.append(chunk.text)
 
         return " ".join(parts).strip()
