@@ -1,2 +1,3 @@
 # AutoResearcher
-AI Agents, LLM Finetuning and much more !!!!
+
+A FastAPI-based research automation service.
