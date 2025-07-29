@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from src.autoresearcher.data.loaders.pmc_loader import PMCXMLLoader
-from src.autoresearcher.data.loaders.cord19_loader import CORD19Loader
-from src.autoresearcher.data.chunking import chunk_document
+from autoresearcher.data.loaders.pmc_loader import PMCXMLLoader
+from autoresearcher.data.loaders.cord19_loader import CORD19Loader
+from autoresearcher.data.chunking import chunk_document
 
 
 SAMPLE_DIR = Path(__file__).parent / "data"

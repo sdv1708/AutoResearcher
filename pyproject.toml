@@ -2,7 +2,7 @@
 name = "autoresearcher"
 version = "0.1.0"
 description = "AutoResearcher – medical RAG assistant"
-authors = ["<Sanjay> <<sanjaydv@umd.edu>>"]
+authors = ["Sanjay <sanjaydv@umd.edu>"]
 packages = [{ include = "autoresearcher", from = "src" }]
 
 ### ───────────────────────── Runtime deps ─────────────────────────

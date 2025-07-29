@@ -17,3 +17,7 @@ build:
 
 docker-run:
 	docker run -p 8000:8080 autoresearcher:dev
+
+index:
+	poetry run python -m autoresearcher.scripts.build_index --pmc_dir data/pmc --cord_dir data/cord --out_path indexes/medical.faiss
+# Make sure to run `chmod +x src/autoresearcher/scripts/build_index.py` to make the script executable
