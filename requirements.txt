@@ -1,0 +1,1 @@
+# Add your pip requirements here if needed for Colab or non-Poetry use
