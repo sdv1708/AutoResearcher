@@ -1,1 +1,0 @@
-# neighbor/paths or Cypher

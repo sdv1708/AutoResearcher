@@ -1,1 +1,3 @@
 # fusion logic
+
+# ...implementation goes here...
