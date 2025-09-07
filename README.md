@@ -1,3 +1,3 @@
 # AutoResearcher
 
-Project structure and usage instructions.
+Project structure and module overview.
